@@ -1,0 +1,31 @@
+PODS:
+  - Nimble (9.2.1)
+  - Quick (4.0.0)
+  - SwiftyJSON (5.0.1)
+  - SwiftyJSONDecoder (0.1.0):
+    - SwiftyJSON (~> 5.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftyJSONDecoder (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SwiftyJSONDecoder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyJSONDecoder: 3b91e1e7bb7ffde0762404c1a46ea98725f6dd1d
+
+PODFILE CHECKSUM: 7c3ea54b2e5be043e32df8d7e81f4fbea66dc0ad
+
+COCOAPODS: 1.10.2
