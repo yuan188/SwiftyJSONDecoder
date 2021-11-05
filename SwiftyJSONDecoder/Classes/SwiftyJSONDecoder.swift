@@ -40,7 +40,18 @@ public class SwiftyJSONDecoder: JSONDecoder {
     }
 
     public override func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T {
-        let json = try JSON(data: data)
+        var options: JSONSerialization.ReadingOptions = []
+        if #available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *) {
+            if allowsJSON5 {
+                options.insert(.json5Allowed)
+            }
+
+            if assumesTopLevelDictionary {
+                options.insert(.topLevelDictionaryAssumed)
+            }
+        }
+
+        let json = try JSON(data: data, options: options)
 
         return try decode(type, from: json)
     }
