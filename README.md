@@ -108,6 +108,7 @@ do {
 
 iOS 9+
 Swift 5.0+
+Xcode 13(如需在以下版本使用，可使用 1.0 版本)
 
 ## Installation
 
